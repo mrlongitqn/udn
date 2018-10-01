@@ -12,5 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('page.home');
+});
+Route::get('/intro', function() {
+    return view('page.introduce');
+});
+Route::get('/new', function(){
+    return view('page.new');
+});
+Route::get('/new-detail', function(){
+    return view('page.new-detail');
+});
+Route::get('/new-category', function(){
+    return view('page.new-category');
+});
+Route::get('/ban', function(){
+    return view('page.ban');
+});
+Route::get('/bantochuc', function(){
+    return view('page.bantochuc');
 });
